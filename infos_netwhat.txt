@@ -1,0 +1,51 @@
+UDP = User Datagram Protocol
+
+- UDP est plus rapide et plus efficace que TCP mais moins robuste
+- UDP n'utilise pas le handshaking
+- UDP protocole non fiable 
+- UDP oriente transaction, il fournit des datagrammes utiles
+- UDP pratique pour le streaming ( diffusion )
+- UDP Absence de delai
+
+TCP = Transmission Control Protocol
+
+- TCP Oriente Connexion ( il ne prend pas en charge la diffusion )
+- TCP plus fiable que UDP - il verifie que les paquets soit dans l'ordre
+- TCP n'est pas oriente datagramme et ne prend pas en charge la diffusion
+- TCP utilise un systeme handshaking
+- TCP Fournit un mecanisme de verification d'erreur etendus
+- TCP Ne garantit l'arrive a destination
+
+OSI = Open Systems Interconnection
+
+1. Data -> Application
+2. Data -> Presentation
+3. Data -> Session
+4. Segments -> Transport
+5. Packets -> Network (Reseau)
+6. Frames -> Data Link (Liaison)
+7. Bits -> Physical (Physique)
+
+IP :
+
+- codes sur 32 bits
+
+IP privees :
+classe a : 10
+classe b : 172.16 a 172.31
+classe c : 192.168.1 a 192.168.255
+
+IPV4 : 32 bits ( 4 octets )
+IPV6 : 128 bits ( 16 octets )
+
+MODELE TCP :
+1. Application
+2. Transport
+3. Internet
+4. Acces reseau
+
+DHCP prend en charge IPV4 et IPV6
+
+Classe d'ip par defaut : C
+DHCP -> UDP
+PING : Internet Control Message Protocol (ICMP)
